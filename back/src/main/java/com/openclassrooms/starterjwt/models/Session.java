@@ -7,16 +7,16 @@ import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name = "SESSIONS")
+@Table(name = "sessions")
 @EntityListeners(AuditingEntityListener.class)
 @Data
 @Accessors(chain = true)
@@ -35,7 +35,7 @@ public class Session {
     private String name;
 
     @NotNull
-    private Date date;
+    private LocalDateTime  date;
 
     @NotNull
     @Size(max = 2500)
@@ -47,7 +47,7 @@ public class Session {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
-            name = "PARTICIPATE",
+            name = "participate",
             joinColumns = @JoinColumn( name = "session_id" ),
             inverseJoinColumns = @JoinColumn( name = "user_id" ) )
     private List<User> users;

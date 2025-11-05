@@ -4,6 +4,7 @@ module.exports = {
   },
   preset: 'jest-preset-angular',
   setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
+  testEnvironment: 'jsdom',
   bail: false,
   verbose: false,
   collectCoverage: false,

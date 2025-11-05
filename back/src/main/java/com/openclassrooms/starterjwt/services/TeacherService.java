@@ -1,10 +1,13 @@
 package com.openclassrooms.starterjwt.services;
 
 import com.openclassrooms.starterjwt.models.Teacher;
-import com.openclassrooms.starterjwt.repository.TeacherRepository;
+import com.openclassrooms.starterjwt.models.User;
+import com.openclassrooms.starterjwt.repositorys.TeacherRepository;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TeacherService {
@@ -18,7 +21,7 @@ public class TeacherService {
         return this.teacherRepository.findAll();
     }
 
-    public Teacher findById(Long id) {
-        return this.teacherRepository.findById(id).orElse(null);
+    public Optional<Teacher> findById(Long id) {
+        return teacherRepository.findById(id);
     }
 }

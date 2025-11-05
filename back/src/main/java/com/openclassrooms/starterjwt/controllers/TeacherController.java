@@ -1,11 +1,12 @@
 package com.openclassrooms.starterjwt.controllers;
 
-import com.openclassrooms.starterjwt.mapper.TeacherMapper;
 import com.openclassrooms.starterjwt.models.Teacher;
+import com.openclassrooms.starterjwt.services.mapper.TeacherMapper;
 import com.openclassrooms.starterjwt.services.TeacherService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import java.util.Optional;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -24,13 +25,15 @@ public class TeacherController {
     @GetMapping("/{id}")
     public ResponseEntity<?> findById(@PathVariable("id") String id) {
         try {
-            Teacher teacher = this.teacherService.findById(Long.valueOf(id));
+            Optional<Teacher> teacherOpt = this.teacherService.findById(Long.valueOf(id));
 
-            if (teacher == null) {
+            if (teacherOpt.isEmpty()) {
                 return ResponseEntity.notFound().build();
             }
 
+            Teacher teacher = teacherOpt.get();
             return ResponseEntity.ok().body(this.teacherMapper.toDto(teacher));
+
         } catch (NumberFormatException e) {
             return ResponseEntity.badRequest().build();
         }

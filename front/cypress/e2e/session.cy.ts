@@ -1,0 +1,22 @@
+/// <reference types="cypress" />
+
+describe('SessionService E2E Behavior', () => {
+  it('should login and access protected route', () => {
+    cy.visit('/login');
+    cy.intercept('POST', '/api/auth/login', {
+      body: {
+        id: 1,
+        username: 'testuser',
+        firstName: 'Test',
+        lastName: 'User',
+        admin: false,
+      },
+    }).as('loginRequest');
+    cy.intercept('GET', '/api/session', []).as('session');
+    cy.get('input[formControlName=email]').type('yoga@studio.com');
+    cy.get('input[formControlName=password]').type('test!1234');
+    cy.get('button[type=submit]').click();
+    cy.wait('@loginRequest');
+    cy.url().should('include', '/sessions');
+  });
+});
