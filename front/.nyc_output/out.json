@@ -1321,7 +1321,7 @@
           "column": 38
         },
         "end": {
-          "line": 148,
+          "line": 152,
           "column": 4
         }
       },
@@ -1372,27 +1372,27 @@
         },
         "end": {
           "line": 94,
-          "column": 121
+          "column": 49
         }
       },
       "62": {
-        "start": {
-          "line": 94,
-          "column": 103
-        },
-        "end": {
-          "line": 94,
-          "column": 119
-        }
-      },
-      "63": {
         "start": {
           "line": 98,
           "column": 6
         },
         "end": {
           "line": 98,
-          "column": 28
+          "column": 121
+        }
+      },
+      "63": {
+        "start": {
+          "line": 98,
+          "column": 103
+        },
+        "end": {
+          "line": 98,
+          "column": 119
         }
       },
       "64": {
@@ -1401,151 +1401,121 @@
           "column": 6
         },
         "end": {
-          "line": 108,
-          "column": 9
+          "line": 102,
+          "column": 28
         }
       },
       "65": {
         "start": {
-          "line": 103,
-          "column": 8
+          "line": 106,
+          "column": 6
         },
         "end": {
-          "line": 105,
-          "column": 11
+          "line": 112,
+          "column": 9
         }
       },
       "66": {
         "start": {
-          "line": 106,
+          "line": 107,
           "column": 8
         },
         "end": {
-          "line": 106,
-          "column": 37
+          "line": 109,
+          "column": 11
         }
       },
       "67": {
         "start": {
-          "line": 107,
+          "line": 110,
           "column": 8
         },
         "end": {
-          "line": 107,
-          "column": 36
+          "line": 110,
+          "column": 37
         }
       },
       "68": {
         "start": {
-          "line": 113,
-          "column": 2
+          "line": 111,
+          "column": 8
         },
         "end": {
-          "line": 115,
-          "column": 4
+          "line": 111,
+          "column": 36
         }
       },
       "69": {
-        "start": {
-          "line": 114,
-          "column": 4
-        },
-        "end": {
-          "line": 114,
-          "column": 184
-        }
-      },
-      "70": {
         "start": {
           "line": 117,
           "column": 2
         },
         "end": {
-          "line": 146,
-          "column": 5
+          "line": 119,
+          "column": 4
+        }
+      },
+      "70": {
+        "start": {
+          "line": 118,
+          "column": 4
+        },
+        "end": {
+          "line": 118,
+          "column": 184
         }
       },
       "71": {
         "start": {
-          "line": 124,
-          "column": 6
+          "line": 121,
+          "column": 2
         },
         "end": {
-          "line": 138,
-          "column": 7
+          "line": 150,
+          "column": 5
         }
       },
       "72": {
         "start": {
-          "line": 125,
-          "column": 8
+          "line": 128,
+          "column": 6
         },
         "end": {
-          "line": 125,
-          "column": 104
+          "line": 142,
+          "column": 7
         }
       },
       "73": {
         "start": {
-          "line": 126,
+          "line": 129,
           "column": 8
         },
         "end": {
-          "line": 128,
-          "column": 11
+          "line": 129,
+          "column": 104
         }
       },
       "74": {
         "start": {
-          "line": 127,
-          "column": 10
+          "line": 130,
+          "column": 8
         },
         "end": {
-          "line": 127,
-          "column": 28
+          "line": 132,
+          "column": 11
         }
       },
       "75": {
         "start": {
-          "line": 129,
-          "column": 8
-        },
-        "end": {
-          "line": 129,
-          "column": 41
-        }
-      },
-      "76": {
-        "start": {
-          "line": 130,
-          "column": 8
-        },
-        "end": {
-          "line": 130,
-          "column": 35
-        }
-      },
-      "77": {
-        "start": {
           "line": 131,
-          "column": 8
+          "column": 10
         },
         "end": {
           "line": 131,
           "column": 28
         }
       },
-      "78": {
-        "start": {
-          "line": 132,
-          "column": 8
-        },
-        "end": {
-          "line": 132,
-          "column": 35
-        }
-      },
-      "79": {
+      "76": {
         "start": {
           "line": 133,
           "column": 8
@@ -1555,83 +1525,123 @@
           "column": 41
         }
       },
-      "80": {
+      "77": {
         "start": {
           "line": 134,
           "column": 8
         },
         "end": {
           "line": 134,
-          "column": 30
+          "column": 35
+        }
+      },
+      "78": {
+        "start": {
+          "line": 135,
+          "column": 8
+        },
+        "end": {
+          "line": 135,
+          "column": 28
+        }
+      },
+      "79": {
+        "start": {
+          "line": 136,
+          "column": 8
+        },
+        "end": {
+          "line": 136,
+          "column": 35
+        }
+      },
+      "80": {
+        "start": {
+          "line": 137,
+          "column": 8
+        },
+        "end": {
+          "line": 137,
+          "column": 41
         }
       },
       "81": {
         "start": {
-          "line": 135,
+          "line": 138,
           "column": 8
         },
         "end": {
-          "line": 135,
-          "column": 49
+          "line": 138,
+          "column": 30
         }
       },
       "82": {
         "start": {
-          "line": 136,
+          "line": 139,
           "column": 8
         },
         "end": {
-          "line": 136,
-          "column": 73
+          "line": 139,
+          "column": 49
         }
       },
       "83": {
         "start": {
-          "line": 137,
+          "line": 140,
           "column": 8
         },
         "end": {
-          "line": 137,
-          "column": 30
+          "line": 140,
+          "column": 73
         }
       },
       "84": {
         "start": {
-          "line": 140,
-          "column": 6
+          "line": 141,
+          "column": 8
         },
         "end": {
-          "line": 143,
-          "column": 7
+          "line": 141,
+          "column": 30
         }
       },
       "85": {
         "start": {
-          "line": 141,
-          "column": 8
+          "line": 144,
+          "column": 6
         },
         "end": {
-          "line": 141,
-          "column": 25
+          "line": 147,
+          "column": 7
         }
       },
       "86": {
         "start": {
-          "line": 142,
+          "line": 145,
           "column": 8
         },
         "end": {
-          "line": 142,
-          "column": 40
+          "line": 145,
+          "column": 25
         }
       },
       "87": {
         "start": {
-          "line": 147,
+          "line": 146,
+          "column": 8
+        },
+        "end": {
+          "line": 146,
+          "column": 40
+        }
+      },
+      "88": {
+        "start": {
+          "line": 151,
           "column": 2
         },
         "end": {
-          "line": 147,
+          "line": 151,
           "column": 21
         }
       }
@@ -1751,7 +1761,7 @@
             "column": 45
           },
           "end": {
-            "line": 148,
+            "line": 152,
             "column": 1
           }
         },
@@ -1796,7 +1806,7 @@
         "loc": {
           "start": {
             "line": 93,
-            "column": 15
+            "column": 26
           },
           "end": {
             "line": 95,
@@ -1807,30 +1817,6 @@
       },
       "7": {
         "name": "(anonymous_7)",
-        "decl": {
-          "start": {
-            "line": 94,
-            "column": 95
-          },
-          "end": {
-            "line": 94,
-            "column": 96
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 94,
-            "column": 103
-          },
-          "end": {
-            "line": 94,
-            "column": 119
-          }
-        },
-        "line": 94
-      },
-      "8": {
-        "name": "(anonymous_8)",
         "decl": {
           "start": {
             "line": 97,
@@ -1844,7 +1830,7 @@
         "loc": {
           "start": {
             "line": 97,
-            "column": 11
+            "column": 15
           },
           "end": {
             "line": 99,
@@ -1852,6 +1838,30 @@
           }
         },
         "line": 97
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": {
+          "start": {
+            "line": 98,
+            "column": 95
+          },
+          "end": {
+            "line": 98,
+            "column": 96
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 98,
+            "column": 103
+          },
+          "end": {
+            "line": 98,
+            "column": 119
+          }
+        },
+        "line": 98
       },
       "9": {
         "name": "(anonymous_9)",
@@ -1868,10 +1878,10 @@
         "loc": {
           "start": {
             "line": 101,
-            "column": 13
+            "column": 11
           },
           "end": {
-            "line": 109,
+            "line": 103,
             "column": 5
           }
         },
@@ -1881,97 +1891,121 @@
         "name": "(anonymous_10)",
         "decl": {
           "start": {
-            "line": 102,
+            "line": 105,
+            "column": 4
+          },
+          "end": {
+            "line": 105,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 105,
+            "column": 13
+          },
+          "end": {
+            "line": 113,
+            "column": 5
+          }
+        },
+        "line": 105
+      },
+      "11": {
+        "name": "(anonymous_11)",
+        "decl": {
+          "start": {
+            "line": 106,
             "column": 94
           },
           "end": {
-            "line": 102,
+            "line": 106,
             "column": 95
           }
         },
         "loc": {
           "start": {
-            "line": 102,
+            "line": 106,
             "column": 99
           },
           "end": {
-            "line": 108,
+            "line": 112,
             "column": 7
           }
         },
-        "line": 102
+        "line": 106
       },
-      "11": {
+      "12": {
         "name": "MeComponent_Factory",
         "decl": {
           "start": {
-            "line": 113,
+            "line": 117,
             "column": 30
           },
           "end": {
-            "line": 113,
+            "line": 117,
             "column": 49
           }
         },
         "loc": {
           "start": {
-            "line": 113,
+            "line": 117,
             "column": 53
           },
           "end": {
-            "line": 115,
+            "line": 119,
             "column": 3
           }
         },
-        "line": 113
+        "line": 117
       },
-      "12": {
+      "13": {
         "name": "MeComponent_Template",
         "decl": {
           "start": {
-            "line": 123,
+            "line": 127,
             "column": 23
           },
           "end": {
-            "line": 123,
+            "line": 127,
             "column": 43
           }
         },
         "loc": {
           "start": {
-            "line": 123,
+            "line": 127,
             "column": 53
           },
           "end": {
-            "line": 144,
+            "line": 148,
             "column": 5
           }
         },
-        "line": 123
+        "line": 127
       },
-      "13": {
+      "14": {
         "name": "MeComponent_Template_button_click_4_listener",
         "decl": {
           "start": {
-            "line": 126,
+            "line": 130,
             "column": 40
           },
           "end": {
-            "line": 126,
+            "line": 130,
             "column": 84
           }
         },
         "loc": {
           "start": {
-            "line": 126,
+            "line": 130,
             "column": 87
           },
           "end": {
-            "line": 128,
+            "line": 132,
             "column": 9
           }
         },
-        "line": 126
+        "line": 130
       }
     },
     "branchMap": {
@@ -2122,11 +2156,11 @@
       "4": {
         "loc": {
           "start": {
-            "line": 114,
+            "line": 118,
             "column": 16
           },
           "end": {
-            "line": 114,
+            "line": 118,
             "column": 32
           }
         },
@@ -2134,35 +2168,35 @@
         "locations": [
           {
             "start": {
-              "line": 114,
+              "line": 118,
               "column": 16
             },
             "end": {
-              "line": 114,
+              "line": 118,
               "column": 17
             }
           },
           {
             "start": {
-              "line": 114,
+              "line": 118,
               "column": 21
             },
             "end": {
-              "line": 114,
+              "line": 118,
               "column": 32
             }
           }
         ],
-        "line": 114
+        "line": 118
       },
       "5": {
         "loc": {
           "start": {
-            "line": 124,
+            "line": 128,
             "column": 6
           },
           "end": {
-            "line": 138,
+            "line": 142,
             "column": 7
           }
         },
@@ -2170,35 +2204,35 @@
         "locations": [
           {
             "start": {
-              "line": 124,
+              "line": 128,
               "column": 6
             },
             "end": {
-              "line": 138,
+              "line": 142,
               "column": 7
             }
           },
           {
             "start": {
-              "line": 124,
+              "line": 128,
               "column": 6
             },
             "end": {
-              "line": 138,
+              "line": 142,
               "column": 7
             }
           }
         ],
-        "line": 124
+        "line": 128
       },
       "6": {
         "loc": {
           "start": {
-            "line": 140,
+            "line": 144,
             "column": 6
           },
           "end": {
-            "line": 143,
+            "line": 147,
             "column": 7
           }
         },
@@ -2206,26 +2240,26 @@
         "locations": [
           {
             "start": {
-              "line": 140,
+              "line": 144,
               "column": 6
             },
             "end": {
-              "line": 143,
+              "line": 147,
               "column": 7
             }
           },
           {
             "start": {
-              "line": 140,
+              "line": 144,
               "column": 6
             },
             "end": {
-              "line": 143,
+              "line": 147,
               "column": 7
             }
           }
         ],
-        "line": 140
+        "line": 144
       }
     },
     "s": {
@@ -2297,10 +2331,10 @@
       "65": 0,
       "66": 0,
       "67": 0,
-      "68": 2,
-      "69": 0,
-      "70": 2,
-      "71": 0,
+      "68": 0,
+      "69": 2,
+      "70": 0,
+      "71": 2,
       "72": 0,
       "73": 0,
       "74": 0,
@@ -2316,7 +2350,8 @@
       "84": 0,
       "85": 0,
       "86": 0,
-      "87": 2
+      "87": 0,
+      "88": 2
     },
     "f": {
       "0": 0,
@@ -2332,7 +2367,8 @@
       "10": 0,
       "11": 0,
       "12": 0,
-      "13": 0
+      "13": 0,
+      "14": 0
     },
     "b": {
       "0": [
@@ -2366,7 +2402,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": ";;;;;;;;;;;;;IAcQA;IAAkCA;IAAaA;;;;;;;;IAC/CA,+BAAqF,CAArF,EAAqF,GAArF;IACKA;IAAkBA;IACrBA;IAAuCA;MAAAA;MAAA;MAAA,OAASA,+BAAT;IAAiB,CAAjB;IACrCA;IAAUA;IAAMA;IAChBA;IAAkBA;IAAMA;;;;;;IAR9BA,+BAAiE,CAAjE,EAAiE,GAAjE;IACKA;;IAA0DA;IAC7DA;IAAGA;IAAuBA;IAC1BA;IACAA;IAOAA,+BAA0D,CAA1D,EAA0D,GAA1D,EAA0D,EAA1D,EAA0D,GAA1D;IAEQA;IAAWA;IAAKA;;IAAsCA;IAC5DA,2BAAG,EAAH,EAAG,GAAH;IAAMA;IAAaA;IAAKA;;IAAqCA;;;;;IAb5DA;IAAAA;IACAA;IAAAA;IACCA;IAAAA;IACEA;IAAAA;IASkBA;IAAAA;IACEA;IAAAA;;;;ACblC,WAAaC,WAAb;EAAM,MAAOA,WAAP,CAAkB;IAItBC,YAAoBC,MAApB,EACoBC,cADpB,EAEoBC,WAFpB,EAGoBC,WAHpB,EAG4C;MAHxB;MACA;MACA;MACA;IACnB;;IAEMC,QAAQ;MACb,KAAKD,WAAL,CACGE,OADH,CACW,KAAKJ,cAAL,CAAoBK,kBAApB,CAAwCC,EAAxC,CAA2CC,QAA3C,EADX,EAEGC,SAFH,CAEcC,IAAD,IAAgB,KAAKA,IAAL,GAAYA,IAFzC;IAGD;;IAEMC,IAAI;MACTC,MAAM,CAACC,OAAP,CAAeF,IAAf;IACD;;IAEMG,MAAM;MACX,KAAKX,WAAL,CACGW,MADH,CACU,KAAKb,cAAL,CAAoBK,kBAApB,CAAwCC,EAAxC,CAA2CC,QAA3C,EADV,EAEGC,SAFH,CAEcM,CAAD,IAAM;QACf,KAAKb,WAAL,CAAiBc,IAAjB,CAAsB,iCAAtB,EAAyD,OAAzD,EAAkE;UAAEC,QAAQ,EAAE;QAAZ,CAAlE;QACA,KAAKhB,cAAL,CAAoBiB,MAApB;QACA,KAAKlB,MAAL,CAAYmB,QAAZ,CAAqB,CAAC,GAAD,CAArB;MACD,CANH;IAOD;;EA5BqB;;;qBAAXrB,aAAWD;EAAA;;;UAAXC;IAAWsB;IAAAC;IAAAC;IAAAC;IAAAC;MAAA;QDZxB3B,+BAAgB,CAAhB,EAAgB,UAAhB,EAAgB,CAAhB,EAAgB,gBAAhB,EAAgB,CAAhB,EAAgB,KAAhB,EAAgB,CAAhB,EAAgB,CAAhB,EAAgB,QAAhB,EAAgB,CAAhB;QAIgCA;UAAA,OAAS4B,UAAT;QAAe,CAAf;QACtB5B;QAAUA;QAAUA;QAEtBA;QAAIA;QAAgBA;QAGxBA;QACEA;QAiBFA;;;;QAjBQA;QAAAA;;;;;ECCZ,OAAaC,WAAb;AAAA",
+      "mappings": ";;;;;;;;;;;;;IAcQA;IAAkCA;IAAaA;;;;;;;;IAC/CA,+BAAqF,CAArF,EAAqF,GAArF;IACKA;IAAkBA;IACrBA;IAAuCA;MAAAA;MAAA;MAAA,OAASA,+BAAT;IAAiB,CAAjB;IACrCA;IAAUA;IAAMA;IAChBA;IAAkBA;IAAMA;;;;;;IAR9BA,+BAAiE,CAAjE,EAAiE,GAAjE;IACKA;;IAA0DA;IAC7DA;IAAGA;IAAuBA;IAC1BA;IACAA;IAOAA,+BAA0D,CAA1D,EAA0D,GAA1D,EAA0D,EAA1D,EAA0D,GAA1D;IAEQA;IAAWA;IAAKA;;IAAsCA;IAC5DA,2BAAG,EAAH,EAAG,GAAH;IAAMA;IAAaA;IAAKA;;IAAqCA;;;;;IAb5DA;IAAAA;IACAA;IAAAA;IACCA;IAAAA;IACEA;IAAAA;IASkBA;IAAAA;IACEA;IAAAA;;;;ACblC,WAAaC,WAAb;EAAM,MAAOA,WAAP,CAAkB;IAOtBC,YAAoBC,MAApB,EACoBC,cADpB,EAEoBC,WAFpB,EAGoBC,WAHpB,EAG4C;MAHxB;MACA;MACA;MACA;IACnB;;IAVDC,aAAa,CAACC,MAAD,EAAe;MAC1B,MAAM,IAAIC,KAAJ,CAAU,yBAAV,CAAN;IACD;;IAUMC,QAAQ;MACb,KAAKJ,WAAL,CACGK,OADH,CACW,KAAKP,cAAL,CAAoBQ,kBAApB,CAAwCC,EAAxC,CAA2CC,QAA3C,EADX,EAEGC,SAFH,CAEcC,IAAD,IAAgB,KAAKA,IAAL,GAAYA,IAFzC;IAGD;;IAEMC,IAAI;MACTC,MAAM,CAACC,OAAP,CAAeF,IAAf;IACD;;IAEMG,MAAM;MACX,KAAKd,WAAL,CACGc,MADH,CACU,KAAKhB,cAAL,CAAoBQ,kBAApB,CAAwCC,EAAxC,CAA2CC,QAA3C,EADV,EAEGC,SAFH,CAEcM,CAAD,IAAM;QACf,KAAKhB,WAAL,CAAiBiB,IAAjB,CAAsB,iCAAtB,EAAyD,OAAzD,EAAkE;UAAEC,QAAQ,EAAE;QAAZ,CAAlE;QACA,KAAKnB,cAAL,CAAoBoB,MAApB;QACA,KAAKrB,MAAL,CAAYsB,QAAZ,CAAqB,CAAC,GAAD,CAArB;MACD,CANH;IAOD;;EA/BqB;;;qBAAXxB,aAAWD;EAAA;;;UAAXC;IAAWyB;IAAAC;IAAAC;IAAAC;IAAAC;MAAA;QDZxB9B,+BAAgB,CAAhB,EAAgB,UAAhB,EAAgB,CAAhB,EAAgB,gBAAhB,EAAgB,CAAhB,EAAgB,KAAhB,EAAgB,CAAhB,EAAgB,CAAhB,EAAgB,QAAhB,EAAgB,CAAhB;QAIgCA;UAAA,OAAS+B,UAAT;QAAe,CAAf;QACtB/B;QAAUA;QAAUA;QAEtBA;QAAIA;QAAgBA;QAGxBA;QACEA;QAiBFA;;;;QAjBQA;QAAAA;;;;;ECCZ,OAAaC,WAAb;AAAA",
       "names": [
         "i0",
         "MeComponent",
@@ -2375,6 +2411,9 @@
         "sessionService",
         "matSnackBar",
         "userService",
+        "deleteAccount",
+        "userId",
+        "Error",
         "ngOnInit",
         "getById",
         "sessionInformation",
@@ -2405,11 +2444,11 @@
       ],
       "sourcesContent": [
         "<div class=\"m3\">\r\n  <mat-card>\r\n    <mat-card-title>\r\n      <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n        <button mat-icon-button (click)=\"back()\">\r\n          <mat-icon>arrow_back</mat-icon>\r\n        </button>\r\n        <h1>User information</h1>\r\n      </div>\r\n    </mat-card-title>\r\n    <mat-card-content>\r\n      <div *ngIf=\"user\" fxLayout=\"column\" fxLayoutAlign=\"start center\">\r\n        <p>Name: {{ user.firstName }} {{ user.lastName | uppercase }}</p>\r\n        <p>Email: {{ user.email }}</p>\r\n        <p *ngIf=\"user.admin\" class=\"my2\">You are admin</p>\r\n        <div *ngIf=\"!user.admin\" fxLayout=\"column\" class=\"my2\" fxLayoutAlign=\"center center\">\r\n          <p>Delete my account:</p>\r\n          <button mat-raised-button color=\"warn\" (click)=\"delete()\">\r\n            <mat-icon>delete</mat-icon>\r\n            <span class=\"ml1\">Detail</span>\r\n          </button>\r\n        </div>\r\n        <div fxLayoutAlign=\"space-between center\" class=\"p2 w100\">\r\n\r\n          <p><i>Create at: </i> {{ user.createdAt | date: 'longDate'}}</p>\r\n          <p><i>Last update: </i> {{ user.updatedAt| date: 'longDate'}}</p>\r\n        </div>\r\n      </div>\r\n    </mat-card-content>\r\n  </mat-card>\r\n</div>\r\n",
-        "import { Component, OnInit } from '@angular/core';\r\nimport { MatSnackBar } from '@angular/material/snack-bar';\r\nimport { Router } from '@angular/router';\r\nimport { User } from '../../interfaces/user.interface';\r\nimport { SessionService } from '../../services/session.service';\r\nimport { UserService } from '../../services/user.service';\r\n\r\n@Component({\r\n  selector: 'app-me',\r\n  templateUrl: './me.component.html',\r\n  styleUrls: ['./me.component.scss']\r\n})\r\nexport class MeComponent implements OnInit {\r\n\r\n  public user: User | undefined;\r\n\r\n  constructor(private router: Router,\r\n              private sessionService: SessionService,\r\n              private matSnackBar: MatSnackBar,\r\n              private userService: UserService) {\r\n  }\r\n\r\n  public ngOnInit(): void {\r\n    this.userService\r\n      .getById(this.sessionService.sessionInformation!.id.toString())\r\n      .subscribe((user: User) => this.user = user);\r\n  }\r\n\r\n  public back(): void {\r\n    window.history.back();\r\n  }\r\n\r\n  public delete(): void {\r\n    this.userService\r\n      .delete(this.sessionService.sessionInformation!.id.toString())\r\n      .subscribe((_) => {\r\n        this.matSnackBar.open(\"Your account has been deleted !\", 'Close', { duration: 3000 });\r\n        this.sessionService.logOut();\r\n        this.router.navigate(['/']);\r\n      })\r\n  }\r\n\r\n}\r\n"
+        "import { Component, OnInit } from '@angular/core';\r\nimport { MatSnackBar } from '@angular/material/snack-bar';\r\nimport { Router } from '@angular/router';\r\nimport { User } from '../../interfaces/user.interface';\r\nimport { SessionService } from '../../services/session.service';\r\nimport { UserService } from '../../services/user.service';\r\n\r\n@Component({\r\n  selector: 'app-me',\r\n  templateUrl: './me.component.html',\r\n  styleUrls: ['./me.component.scss']\r\n})\r\nexport class MeComponent implements OnInit {\r\n  deleteAccount(userId: string) {\r\n    throw new Error('Method not implemented.');\r\n  }\r\n\r\n  public user: User | undefined;\r\n\r\n  constructor(private router: Router,\r\n              private sessionService: SessionService,\r\n              private matSnackBar: MatSnackBar,\r\n              private userService: UserService) {\r\n  }\r\n\r\n  public ngOnInit(): void {\r\n    this.userService\r\n      .getById(this.sessionService.sessionInformation!.id.toString())\r\n      .subscribe((user: User) => this.user = user);\r\n  }\r\n\r\n  public back(): void {\r\n    window.history.back();\r\n  }\r\n\r\n  public delete(): void {\r\n    this.userService\r\n      .delete(this.sessionService.sessionInformation!.id.toString())\r\n      .subscribe((_) => {\r\n        this.matSnackBar.open(\"Your account has been deleted !\", 'Close', { duration: 3000 });\r\n        this.sessionService.logOut();\r\n        this.router.navigate(['/']);\r\n      })\r\n  }\r\n\r\n}\r\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "a01c674649649c5d716e895c448d7e9c34535ed6"
+    "hash": "68b0c05f27106546b23b824c0012d1ef716510f3"
   },
   "C:\\dev\\Projet5-Full-Stack-Testez-une-application-full-stack\\front\\src\\app\\components\\not-found\\not-found.component.ts": {
     "path": "C:\\dev\\Projet5-Full-Stack-Testez-une-application-full-stack\\front\\src\\app\\components\\not-found\\not-found.component.ts",
