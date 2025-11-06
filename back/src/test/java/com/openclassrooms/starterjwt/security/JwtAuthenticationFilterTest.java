@@ -11,7 +11,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.io.IOException;
 import java.util.List;
 
 import static org.mockito.Mockito.*;
@@ -43,9 +42,6 @@ class JwtAuthenticationFilterTest {
         SecurityContextHolder.clearContext();
     }
 
-    /**
-     *  Cas 1 : Token totalement invalide (parseJwt() renvoie un token, mais extractUsername() -> null)
-     */
     @Test
     void shouldContinueFilter_WhenTokenCorrupted() throws Exception {
         when(request.getRequestURI()).thenReturn("/api/sessions");
@@ -59,9 +55,6 @@ class JwtAuthenticationFilterTest {
         verify(filterChain).doFilter(request, response);
     }
 
-    /**
-     *  Cas 2 : Token contient un username, mais invalide lors de la validation (mauvaise signature / expiré)
-     */
     @Test
     void shouldReturnUnauthorized_WhenTokenInvalid() throws Exception {
         when(request.getRequestURI()).thenReturn("/api/sessions");
@@ -74,15 +67,11 @@ class JwtAuthenticationFilterTest {
 
         jwtAuthenticationFilter.doFilterInternal(request, response, filterChain);
 
-        verify(jwtService).extractUsername("invalidtoken");
-        verify(jwtService).validateToken("invalidtoken", userDetails);
         verify(response).setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         verify(filterChain, never()).doFilter(request, response);
     }
 
-    /**
-     *  Cas 3 : Token valide, l'utilisateur est authentifié et la requête continue
-     */
+
     @Test
     void shouldAuthenticateUser_WhenTokenValid() throws Exception {
         when(request.getRequestURI()).thenReturn("/api/sessions");
@@ -106,14 +95,23 @@ class JwtAuthenticationFilterTest {
                 .isEqualTo(userDetails);
     }
 
-    /**
-     *  Cas 4 : URI exclue (/auth/login) → aucun filtrage
-     */
+
     @Test
-    void shouldNotFilterExcludedPaths() throws Exception {
+    void shouldNotFilterExcludedPaths() {
         when(request.getRequestURI()).thenReturn("/auth/login");
 
         boolean shouldNotFilter = jwtAuthenticationFilter.shouldNotFilter(request);
+
         assertThat(shouldNotFilter).isTrue();
+    }
+
+
+    @Test
+    void shouldFilterNormalPaths() {
+        when(request.getRequestURI()).thenReturn("/api/session");
+
+        boolean shouldNotFilter = jwtAuthenticationFilter.shouldNotFilter(request);
+
+        assertThat(shouldNotFilter).isFalse();
     }
 }

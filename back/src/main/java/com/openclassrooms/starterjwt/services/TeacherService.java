@@ -1,7 +1,6 @@
 package com.openclassrooms.starterjwt.services;
 
 import com.openclassrooms.starterjwt.models.Teacher;
-import com.openclassrooms.starterjwt.models.User;
 import com.openclassrooms.starterjwt.repositorys.TeacherRepository;
 
 import org.springframework.stereotype.Service;

@@ -5,21 +5,16 @@ import com.openclassrooms.starterjwt.dto.TokenResponseDto;
 import com.openclassrooms.starterjwt.exceptions.AuthenticatedUserNotFound;
 import com.openclassrooms.starterjwt.models.AppUserDetails;
 import com.openclassrooms.starterjwt.models.User;
-import com.openclassrooms.starterjwt.repositorys.UserRepository;
 import com.openclassrooms.starterjwt.security.JwtService;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
+import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.AuthenticationServiceException;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.authentication.*;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -45,6 +40,9 @@ class AuthenticationServiceTest {
     @Mock
     private AppUserDetails userDetails;
 
+    @Mock
+    private SecurityContext securityContext;
+
     private User user;
 
     @BeforeEach
@@ -55,6 +53,12 @@ class AuthenticationServiceTest {
         user.setFirstName("John");
         user.setLastName("Doe");
         user.setAdmin(true);
+        SecurityContextHolder.setContext(securityContext);
+    }
+
+    @AfterEach
+    void tearDown() {
+        SecurityContextHolder.clearContext();
     }
 
     @Test
@@ -94,6 +98,7 @@ class AuthenticationServiceTest {
 
         assertEquals("token123", result.getToken());
         assertEquals(user.getId(), result.getId());
+        assertEquals(user.getEmail(), result.getEmail());
     }
 
     @Test
@@ -103,5 +108,29 @@ class AuthenticationServiceTest {
         when(jwtService.generateToken(authentication)).thenReturn("token123");
 
         assertThrows(AuthenticationServiceException.class, () -> authenticationService.generateToken(authentication));
+    }
+
+    @Test
+    void testGetAuthenticatedUserEmail_success() {
+        when(securityContext.getAuthentication()).thenReturn(authentication);
+        when(authentication.isAuthenticated()).thenReturn(true);
+        when(authentication.getName()).thenReturn("test@example.com");
+
+        String email = authenticationService.getAuthenticatedUserEmail();
+
+        assertEquals("test@example.com", email);
+        verify(securityContext).getAuthentication();
+    }
+
+    @Test
+    void testGetAuthenticatedUserEmail_noAuthenticatedUser() {
+        when(securityContext.getAuthentication()).thenReturn(null);
+
+        AuthenticatedUserNotFound exception = assertThrows(
+                AuthenticatedUserNotFound.class,
+                () -> authenticationService.getAuthenticatedUserEmail()
+        );
+
+        assertTrue(exception.getMessage().contains("No authenticated user found"));
     }
 }

@@ -11,6 +11,9 @@ import { UserService } from '../../services/user.service';
   styleUrls: ['./me.component.scss']
 })
 export class MeComponent implements OnInit {
+  deleteAccount(userId: string) {
+    throw new Error('Method not implemented.');
+  }
 
   public user: User | undefined;
 
