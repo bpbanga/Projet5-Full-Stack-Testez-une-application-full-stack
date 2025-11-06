@@ -172,7 +172,7 @@ npm run cypress:open
 npm run cypress:run
 ```
 #### Rapport E2E :
-`http://localhost:4300`
+`http://localhost:4200`
 
 
 ### 🧑‍💻 Auteur
