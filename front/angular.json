@@ -6,12 +6,8 @@
     "yoga": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
-        }
+        "@schematics/angular:component": { "style": "scss" },
+        "@schematics/angular:application": { "strict": true }
       },
       "root": "",
       "sourceRoot": "src",
@@ -26,10 +22,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
@@ -39,22 +32,11 @@
           "configurations": {
             "production": {
               "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
+                { "type": "initial", "maximumWarning": "500kb", "maximumError": "1mb" },
+                { "type": "anyComponentStyle", "maximumWarning": "2kb", "maximumError": "4kb" }
               ],
               "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
+                { "replace": "src/environments/environment.ts", "with": "src/environments/environment.prod.ts" }
               ],
               "outputHashing": "all"
             },
@@ -71,104 +53,67 @@
               "sourceMap": true,
               "namedChunks": true,
               "vendorChunk": true,
-              "customWebpackConfig": {
-                "path": "./cypress/coverage.webpack.ts"
-              }
+              "customWebpackConfig": { "path": "./cypress/coverage.webpack.ts" }
+            },
+            "coverage": {
+              "sourceMap": true,
+              "optimization": false,
+              "vendorChunk": true,
+              "namedChunks": true,
+              "extractLicenses": false,
+              "buildOptimizer": false,
+              "customWebpackConfig": { "path": "./cypress/coverage.webpack.ts" }
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "project-name:build",
-            "proxyConfig": "src/proxy.config.json"
-          },
+          "options": { "browserTarget": "yoga:build" },
           "configurations": {
-            "production": {
-              "browserTarget": "yoga:build:production"
-            },
-            "development": {
-              "browserTarget": "yoga:build:development"
+            "production": { "browserTarget": "yoga:build:production" },
+            "development": { "browserTarget": "yoga:build:development" },
+            "coverage": {
+              "browserTarget": "yoga:build:coverage",
+              "proxyConfig": "src/proxy.config.json"
             }
           },
           "defaultConfiguration": "development"
         },
-        "serve-coverage": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
-          "options": {
-            "browserTarget": "yoga:build:e2e"
-          }
-        },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "yoga:build"
-          }
+          "options": { "browserTarget": "yoga:build" }
         },
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "yoga:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "yoga:serve:production"
-            }
-          }
+          "options": { "devServerTarget": "yoga:serve" },
+          "configurations": { "production": { "devServerTarget": "yoga:serve:production" } }
         },
         "cypress-open": {
           "builder": "@cypress/schematic:cypress",
-          "options": {
-            "watch": true,
-            "headless": false
-          }
+          "options": { "watch": true, "headless": false }
         },
         "e2e": {
           "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "yoga:serve-coverage",
-            "watch": true,
-            "headless": false
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "yoga:serve-coverage:production"
-            }
-          }
+          "options": { "devServerTarget": "yoga:serve", "watch": true, "headless": false },
+          "configurations": { "production": { "devServerTarget": "yoga:serve:production" } }
         },
         "e2e-ci": {
           "builder": "@cypress/schematic:cypress",
-          "options": {
-            "browser": "chrome",
-            "devServerTarget": "yoga:serve-coverage",
-            "headless": true,
-            "watch": false
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "yoga:serve-coverage:production"
-            }
-          }
+          "options": { "browser": "chrome", "devServerTarget": "yoga:serve", "headless": true, "watch": false },
+          "configurations": { "production": { "devServerTarget": "yoga:serve:production" } }
         }
       }
     }
   },
-  "cli": {
-    "analytics": false
-  }
+  "cli": { "analytics": false }
 }
